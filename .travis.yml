@@ -1,5 +1,5 @@
-sudo: required
 language: java
+os: linux
 jdk: oraclejdk11
 services:
   - docker
