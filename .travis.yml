@@ -1,11 +1,11 @@
 language: java
-jdk: openjdk11
+jdk: oraclejdk11
 # skip installation step
 install: true
 cache:
   directories:
     - $HOME/.m2
 script:
-  - ./mvnw --settings .maven.xml clean package -B -X
+  - ./mvnw --settings .maven.xml clean package -B
 #after_success:
 #  mvn --settings .maven.xml docker:build docker:push
