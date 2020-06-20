@@ -1,4 +1,8 @@
 language: java
 jdk: openjdk11
+services:
+  - docker
 install:
-  mvn install -DskipTests=true -Dgpg.skip -Dmaven.javadoc.skip=true -B -V docker:build docker:push -Ddocker.username=$DOCKER_USERNAME -Ddocker.password=$DOCKER_PASSWORD
+  mvn --settings .maven.xml install -DskipTests=true -Dgpg.skip -Dmaven.javadoc.skip=true -B -V
+after_success:
+  mvn --settings .maven.xml docker:build docker:push
