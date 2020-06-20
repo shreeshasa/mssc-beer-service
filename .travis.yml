@@ -7,7 +7,8 @@ services:
 cache:
   directories:
     - $HOME/.m2
-install: false
+# skip installation step
+install: true
 script:
   - ./mvnw --settings .maven.xml clean package -B docker:build docker:push
 #after_success:
