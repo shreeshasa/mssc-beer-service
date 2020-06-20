@@ -2,7 +2,7 @@ language: java
 jdk: openjdk11
 services:
   - docker
-install:
-  mvn --settings .maven.xml install -DskipTests=true -Dgpg.skip -Dmaven.javadoc.skip=true -B -V
+script:
+  ./mvnw --settings .maven.xml clean install -B
 #after_success:
 #  mvn --settings .maven.xml docker:build docker:push
