@@ -8,10 +8,7 @@
   </servers>
   <profiles>
     <profile>
-      <id>nexus</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
+      <id>oss</id>
       <repositories>
         <repository>
           <id>nexus-repo</id>
