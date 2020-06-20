@@ -3,6 +3,6 @@ jdk: openjdk11
 services:
   - docker
 script:
-  ./mvnw --settings .maven.xml clean install -B
+  - ./mvnw --settings .maven.xml clean install -B
 #after_success:
 #  mvn --settings .maven.xml docker:build docker:push
