@@ -1,6 +1,8 @@
 language: java
 os: linux
-jdk: oraclejdk11
+jdk:
+  - openjdk11
+  - openjdk-ea
 services:
   - docker
 cache:
