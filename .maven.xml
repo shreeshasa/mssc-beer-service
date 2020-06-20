@@ -8,7 +8,7 @@
   </servers>
   <profiles>
     <profile>
-      <id>oss</id>
+      <id>ossrh</id>
       <repositories>
         <repository>
           <id>nexus-repo</id>
