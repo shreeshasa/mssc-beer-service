@@ -10,4 +10,5 @@ cache:
 # skip installation step
 install: true
 script:
-  - ./mvnw --settings .maven.xml clean package -B -Pdocker
+  - ./mvnw clean package -B -Pdocker
+  - ./mvnw --settings .maven.xml docker:push
