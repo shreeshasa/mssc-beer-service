@@ -20,7 +20,7 @@ import java.util.UUID;
 /**
  * @author shreeshasa
  */
-@Profile ("!local-discovery")
+@Profile ("!local-discovery & !digital-ocean")
 @Slf4j
 @ConfigurationProperties (prefix = "sfg.brewery")
 @Component

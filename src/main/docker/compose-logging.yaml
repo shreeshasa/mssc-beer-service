@@ -63,7 +63,7 @@ services:
     labels:
       collect_logs_with_filebeat: "true"
       decode_log_event_to_json_object: "true"
-  inventory-failover:
+  inventory-failover-service:
     image: shreeshasa/mssc-inventory-failover-service
     ports:
       - 8083:8083
